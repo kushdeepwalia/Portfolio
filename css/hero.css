@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --priCol: #2f55d4;
+    --white: white;
+    --black: black;
+    --secCol: #f5293d;
+}
+
+.hero{
+    width: 100vw;
+    height: 60vh;
+    background-color: var(--priCol);
+    display: flex;
+    justify-content: center;
+}
+
+.myPic{
+    position: relative;
+}
+
+#myHeroPic{
+    width: 27.7vw;
+    position: absolute;
+    right: 50px;
+    animation: fade-in 3s forwards;
+}
+
+@keyframes fade-in{
+    0%{ opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.myIntro{
+    position: absolute;
+    left: 55%;
+    top: 20%;
+    color: var(--white);
+}
+
+.name{
+    font-size: 50px;
+}
+
+.name > span{
+    color: var(--secCol);
+}
+
+.line1{
+    font-size: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.1s linear;
+}
+
+#line1{
+    color: var(--black);
+}
+
+.line2{
+    font-size: 25px;
+}
+
+.cursor{
+    display: inline-block;
+    width: 3px;
+    background-color: var(--black);
+    border-radius: 20px;
+    margin-left: 0.3rem;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0%, 49%, 100% {background-color: var(--black);}
+    50%, 99%{background-color: transparent;}
+}
+
+.cursor.typing{
+    animation: none;
+}
+
+@media screen and (max-width: 768px){
+    #myHeroPic{
+        display: none;
+    }
+
+    .hero{
+        justify-content: unset;
+        height: 30vh;
+    }
+    
+    .myIntro{
+        position: unset;
+        padding: 0 10px;
+        padding-top: 30px;
+    }
+
+    .name{
+        font-size: 30px;
+    }
+    
+    .name > span{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    
+    .line1{
+        font-size: 21px;
+    }
+    
+    #line1{
+        font-size: 25px;
+    }
+    
+    .cursor{
+        font-size: 25px;
+    }
+
+    .line2{
+        font-size: 19px;
+        margin-top: 10px;
+    }
+}
