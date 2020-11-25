@@ -23,6 +23,7 @@ body{
     background-color: var(--priCol);
     display: flex;
     justify-content: center;
+    overflow-y: hidden;
 }
 
 .myPic{
@@ -31,6 +32,7 @@ body{
 
 #myHeroPic{
     width: 27.7vw;
+    height: 61vh;
     position: absolute;
     right: 50px;
     animation: fade-in 3s forwards;
@@ -89,6 +91,31 @@ body{
     animation: none;
 }
 
+.myIntro > .buttons{
+    display: flex;
+    margin: 10px 10px 20px;
+}
+
+.myIntro > .buttons > .downloadCV{
+    margin-right: 15px;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: var(--secCol);
+    box-shadow: 0 0 10px black;
+}
+
+.downloadCV > a,.hireME > a{
+    color: var(--white);
+}
+
+.hireME{
+    margin-left: 15px;
+    padding: 8px 17px;
+    border-radius: 20px;
+    background-color: var(--secCol);
+    box-shadow: 0 0 10px black;
+}
+
 @media screen and (max-width: 768px){
     #myHeroPic{
         display: none;
@@ -96,7 +123,7 @@ body{
 
     .hero{
         justify-content: unset;
-        height: 30vh;
+        height: 40vh;
     }
     
     .myIntro{

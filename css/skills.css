@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --priCol: #2f55d4;
+    --white: white;
+    --black: black;
+    --secCol: #f5293d;
+}
+
+.skill-section,.service-section{
+    width: 100vw;
+    background-color: rgb(221, 208, 208);
+    padding: 20px 0 40px 0;
+}
+
+.skill-section .skill-box{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-left{
+    width: 40vw;
+    box-shadow: 0 0 10px 2px var(--black);
+    height: fit-content;
+    margin-right: 40px;
+}
+
+.skill{
+    width: 40vw;
+    margin: 0 auto;
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.skill-nanum{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.skill-bar{
+    width: 37vw;
+    height: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--black);
+    margin: 10px 12px;
+    margin-bottom: 20px;
+    display: flex;
+    padding-left: 4px;
+    align-items: center;
+}
+
+.skill-fill{
+    border-radius: 6px;
+    background-color: var(--secCol);
+    height: 10px;
+}
+
+#php > .skill-bar > .skill-fill{
+    animation-name: fill-php;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+@keyframes fill-php{
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 100%;
+    }   
+    60%{
+        width: 20%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+#ccpp > .skill-bar > .skill-fill{
+    animation-name: fill-ccpp;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+@keyframes fill-ccpp{
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 100%;
+    }   
+    60%{
+        width: 20%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+#teamManage > .skill-bar > .skill-fill{
+    animation-name: fill-teamManage;
+    animation-duration: 5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+@keyframes fill-teamManage{
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 100%;
+    }   
+    60%{
+        width: 20%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+#javascript > .skill-bar > .skill-fill{
+    animation-name: fill-javascript;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+    animation-delay: 1s;
+}
+
+@keyframes fill-javascript{
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 100%;
+    }   
+    60%{
+        width: 10%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+#htmlCSS > .skill-bar > .skill-fill{
+    animation-name: fill-htmlCSS;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transition: ease-in;
+}
+
+@keyframes fill-htmlCSS{
+    0%{
+        width: 0%;
+    }
+    30%{
+        width: 100%;
+    }   
+    60%{
+        width: 20%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+.skill-right{
+    width: 40vw;
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-right .img img{
+    width: 30vw;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.skill-right .myName{
+    font-size: 30px;
+}
+
+.skill-right .job-app{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.skill-right .hireME{
+    margin: 0;
+}
+
+/* services */
+
+.service-box{
+    width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service-card{
+    background-color: #f5293d;
+    width: 250px;
+    /* max-width: 200px; */
+    margin: 30px 35px;
+    height: 200px;
+}

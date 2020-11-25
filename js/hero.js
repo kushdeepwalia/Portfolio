@@ -2,9 +2,9 @@ const line = document.getElementById('line1');
 const cursor = document.querySelector('.cursor');
 
 const textArray = Array("Open Source Contributor.","Web Developer.","C/C++ Coder.");
-const typingDelay = 200;
+const typingDelay = 130;
 const erasingDelay = 100;
-const newTextDelay = 1500;
+const newTextDelay = 1800;
 let textArrayIndex = 0;
 let charIndex = 0;
 
