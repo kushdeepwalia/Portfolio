@@ -211,3 +211,26 @@
     font-weight: normal;
     font-size: 1.1em;
 }
+
+@media screen and (max-width: 768px){
+    .edu-content::before,.edu-box .edu-content::after,.edu-content{
+        width: unset !important;
+    }
+    .edu-content{
+        margin-top: 7px;
+    }
+    .edu-box .edu-dot{
+        left: unset;
+        top: 7%;
+    }
+    .edu-box:nth-child(1) .edu-dot{
+        left: unset;
+        top: 3%;
+    }
+    .edu-box:nth-child(even) .edu-content{
+        float: unset;
+    }
+    .about-content{
+        padding-bottom: 2vh;
+    }
+}

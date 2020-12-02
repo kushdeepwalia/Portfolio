@@ -129,3 +129,20 @@
 .plan-desc > button.btn.newBtn > a{
     color: var(--white);
 }
+
+@media screen and (max-width: 768px){
+    .amount{
+        font-size: 1.5rem;
+    }
+    .plan-container{
+        margin: 7px;
+        width: 300px;
+        height: 450px;
+    }
+    .plan-amount{
+        padding-top: 10px;
+    }
+    .plan-desc > button.btn.newBtn{
+        bottom: 25px;
+    }
+}

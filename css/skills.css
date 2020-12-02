@@ -225,3 +225,31 @@
     margin: 30px 35px;
     height: 200px;
 }
+
+@media screen and (max-width: 768px){
+    .skill-section .skill-box{
+        flex-direction: column;
+        height: unset;
+        padding-top: 30px;
+    }
+    .skill-left{
+        margin: unset;
+        width: unset;
+    }
+    .skill-right{
+        width: unset;
+        margin: unset;
+        margin-top: 20px;
+    }
+    .skill-bar{
+        width: unset;
+    }
+    .skill{
+        width: 80vw;
+        margin: unset;
+    }
+    .skill-right .img img{
+        width: 80vw;
+        height: 45vh;
+    }
+}
