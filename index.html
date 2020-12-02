@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/about.css">
     <!-- Skill CSS -->
     <link rel="stylesheet" href="./css/skills.css">
+    <!-- Project Cards CSS -->
+    <link rel="stylesheet" href="./css/project-card.css">
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/6bba5b5ec4.js"></script>
 </head>
@@ -19,15 +21,15 @@
     
     <!-- Header Begins -->
 
-    <header class="header">
+    <header class="header" id="home">
         <img src="./images/My Pic.jpeg" alt="" id="myPic">
         <nav class="nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="hamicon" id="hamicon">
@@ -36,6 +38,7 @@
             <div class="icon-line"></div>
         </div>
     </header>
+
     <nav class="nav" id="nav">
         <ul>
             <li><a href="#">Home</a></li>
@@ -180,7 +183,7 @@
     
     <!-- Skills Ends -->
     <!-- Services Starts -->
-    <section id="services" class="service-section">
+    <!-- <section id="service" class="service-section">
         <div class="heading">Services</div>
         <div class="service-box">
             <div class="service-card"></div>
@@ -190,12 +193,25 @@
             <div class="service-card"></div>
             <div class="service-card"></div>
         </div>
-    </section>
+    </section> -->
     <!-- Services Ends -->
+    <!-- Projects Begin -->
+
+    <section id="project" class="project-section">
+        <div class="heading">Projects</div>
+        <div class="project-cards">
+            <div class="row" id="row">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Ends -->
 
     <!-- Header Js -->
     <script src="./js/header.js"></script>
-    <!-- Header Js -->
+    <!-- Hero Js -->
     <script src="./js/hero.js"></script>
+    <!-- Project Card Js -->
+    <script src="./js/project-card.js"></script>
 </body>
 </html>
