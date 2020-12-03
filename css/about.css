@@ -1,6 +1,6 @@
 .about-section{
     width: 100vw;
-    background-color: rgb(221, 208, 208);
+    background-color: var(--bgCol);
     padding: 20px 0 40px 0;
 }
 
@@ -50,7 +50,7 @@
 
 .edu-section{
     width: 100vw;
-    background-color: rgb(221, 208, 208);
+    background-color: var(--bgCol);
     padding: 20px 0 40px 0;
     height: fit-content;
 }
