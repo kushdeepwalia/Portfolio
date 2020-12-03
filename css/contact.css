@@ -1,0 +1,13 @@
+.contact-section{
+    width: 100vw;
+    background-color: var(--bgCol);
+    padding: 20px 0 40px 0;
+}
+
+.contact{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+}

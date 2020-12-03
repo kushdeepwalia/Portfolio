@@ -1,0 +1,48 @@
+Waypoint;
+
+var waypoint = new Waypoint({
+    element: document.getElementById('home'),
+    handler: function(direction){
+        document.getElementById('nav').style.position = "absolute";
+    }
+})
+
+var j = 0;
+var waypoint = new Waypoint({
+  element: document.getElementById('hero'),
+  handler: function (direction) {
+    if (j % 2 === 0) {
+      document.getElementById('nav').style.position = "fixed";
+      document.getElementById('nav').style.top = "15vh";
+      j = j + 1;
+      console.log(j)
+      console.log("Entered Sticky")
+    }
+    else {
+      document.getElementById('nav').style.position = "absolute";
+      j = j + 1;
+      console.log(j)
+      console.log("Entered Absolute")
+    }
+  }
+})
+var m = 0;
+var waypoint = new Waypoint({
+    element: document.getElementById('about'),
+    handler: function (direction) {
+        if (m % 2 === 0) {
+            document.getElementById('myPic').style.display = "block";
+            document.getElementById('home').style.justifyContent = "space-between";
+            m = m + 1;
+            console.log(m)
+            console.log("Entered Sticky")
+        }
+        else {
+            document.getElementById('myPic').style.display = "none";
+            document.getElementById('home').style.justifyContent = "flex-end";
+            m = m + 1;
+            console.log(m)
+            console.log("Entered Absolute")
+        }
+    }
+})

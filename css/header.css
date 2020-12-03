@@ -14,6 +14,10 @@
     --bgCol: #ddd0d0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #myPic{
     width: 70px;
     border-radius: 100%;
@@ -34,6 +38,8 @@
     justify-content: space-between;
     padding: 0 30px;
     z-index: 100;
+    position: sticky;
+    top: 0;
 }
 
 .hamicon{
@@ -113,12 +119,13 @@
     color: var(--white);
     position: relative;
     padding-bottom: 4px;
+    cursor: pointer;
 }
 
 .nav-ham{
     background-color: var(--priCol);
     height: 230px;
-    width: 95%;
+    width: 100%;
     display: flex;
     border-radius: 0 0 20px 20px;
     border: 1.5px solid black;
@@ -186,18 +193,15 @@
         display: flex !important;
     }
     #myPic{
-        display: block;
+        display: block !important;
+    }
+    .header{
+        justify-content: space-between !important;
     }
 }
 
 @media screen and (min-width: 769px){
     .nav-ham{
         display: none;
-    }
-    #myPic{
-        display: none;
-    }
-    .header{
-        justify-content: flex-end;
     }
 }

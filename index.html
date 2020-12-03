@@ -21,25 +21,31 @@
     <link rel="stylesheet" href="./css/testimonial.css" />
     <!-- Experience CSS -->
     <link rel="stylesheet" href="./css/experience.css" />
+    <!-- Contact CSS -->
+    <link rel="stylesheet" href="./css/contact.css" />
+    <!-- Scrollbar CSS -->
+    <link rel="stylesheet" href="./css/scrollbar.css" />
     <!-- owl CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/6bba5b5ec4.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./node_modules/waypoints/lib/noframework.waypoints.min.js"></script>
   </head>
   <body>
     <!-- Header Begins -->
 
-    <header class="header" id="home">
-      <img src="./images/My Pic.jpeg" alt="" id="myPic" />
+    <header class="header" id="home" style="justify-content: flex-end;">
+      <img src="./images/My Pic.jpeg" alt="" id="myPic" style="display: none;"/>
       <nav class="nav">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a id="homeBtn">Home</a></li>
+          <li><a id="aboutBtn">About</a></li>
+          <li><a id="skillsBtn">Skills</a></li>
+          <li><a id="projectBtn">Projects</a></li>
+          <li><a id="contactBtn">Contact</a></li>
         </ul>
       </nav>
       <div class="hamicon" id="hamicon">
@@ -50,18 +56,18 @@
     </header>
     <nav class="nav" id="nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a id="homeBtn2">Home</a></li>
+        <li><a id="aboutBtn2">About</a></li>
+        <li><a id="skillsBtn2">Skills</a></li>
+        <li><a id="projectBtn2">Projects</a></li>
+        <li><a id="contactBtn2">Contact</a></li>
       </ul>
     </nav>
 
     <!-- Header Ends -->
     <!-- Hero Box Starts -->
 
-    <div class="hero">
+    <div class="hero" id="hero">
       <div class="myPic">
         <img src="./images/myCutOut.png" alt="" id="myHeroPic" />
       </div>
@@ -94,7 +100,7 @@
           </span>
         </div>
         <div class="contactButton">
-          <button>Contact Me</button>
+          <button id="contactBtn3">Contact Me</button>
         </div>
       </div>
     </section>
@@ -374,7 +380,58 @@
     </section>
 
     <!-- Testimonial Ends -->
+    <!-- Contact Begins -->
 
+    <section id="contact" class="contact-section">
+        <div class="heading">Contact</div>
+        <div class="contact">
+            <div class="myInfo">
+                <div class="phone">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="number">
+                        <div class="numname">Phone No.</div>
+                        <div class="numnum"><a href="tel:+919354752373">+91 93547 52373</a></div>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                    <div class="mail">
+                        <div class="mailname">Email</div>
+                        <div class="mailEmail"><a href="mailto:kushdeepwalia@outlook.com">kushdeepwalia@outlook.com</a></div>
+                    </div>
+                </div>
+                <div class="location">
+                    <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                    <div class="loca">
+                        <div class="locaname">Location</div>
+                        <div class="locaLocation">New Delhi, Delhi, India</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form name="google-sheet" method="post">
+                    <div class="nameEmail">
+                        <input type="text" name="Name" id="Name">
+                        <input type="email" name="Email" id="Email">
+                    </div>
+                    <div class="subject">
+                        <input type="text" name="Subject" id="Subject">
+                    </div>
+                    <div class="message">
+                        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit" id="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Ends -->
+
+    <!-- Script Js -->
+    <script src="./js/script.js"></script>
     <!-- Header Js -->
     <script src="./js/header.js"></script>
     <!-- Hero Js -->
@@ -385,5 +442,73 @@
     <!-- <script src="./js/testimonial.js"></script> -->
     <!-- Testimonial -->
     <script>$(".container").owlCarousel({loop: true,autoplay: true,autoplayTimeOut: 100,autoplayHoverPause: true,responsive: {0 : {items: 1},768 : {items: 2},1000 : {items: 3}}});</script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwvLnSaK39smtIvK9Hi6UEDp-PXcvEC3udCu7nGTF7PEG7REXTu/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', (e) => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(swal({title: "Good job!", text: "You clicked the button!", icon: "success"}),form.clear())
+          .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        $("#contactBtn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 500);
+        });
+        $("#homeBtn").click(function() {
+            $('html, body').animate({
+                scrollBottom: $("#home").offset().top
+            }, 500);
+        });
+        $("#aboutBtn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 500);
+        });
+        $("#projectBtn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#project").offset().top
+            }, 500);
+        });
+        $("#skillsBtn").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#skills").offset().top
+            }, 500);
+        });
+        $("#contactBtn2").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 500);
+        });
+        $("#homeBtn2").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#home").offset().top
+            }, 500);
+        });
+        $("#aboutBtn2").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 500);
+        });
+        $("#projectBtn2").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#project").offset().top
+            }, 500);
+        });
+        $("#skillsBtn2").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#skills").offset().top
+            }, 500);
+        });
+        $("#contactBtn3").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 500);
+        });
+    </script>
   </body>
 </html>
