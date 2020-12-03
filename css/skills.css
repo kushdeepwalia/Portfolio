@@ -234,7 +234,13 @@
         margin: unset;
     }
     .skill-right .img img{
+        width: 40vw;
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .skill-right .img img{
         width: 80vw;
-        height: 45vh;
     }
 }

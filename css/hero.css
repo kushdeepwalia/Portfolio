@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: center;
     overflow-y: hidden;
+    position: relative;
 }
 
 .myPic{
@@ -16,10 +17,10 @@ body{
 }
 
 #myHeroPic{
-    width: 27.7vw;
+    width: 255px;
     height: 61vh;
     position: absolute;
-    right: 50px;
+    right: 100px;
     animation: fade-in 3s forwards;
 }
 

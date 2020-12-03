@@ -1,0 +1,21 @@
+body{
+    position: relative;
+}
+
+.arrowUp{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: var(--secCol);
+    position: fixed;
+    top: 91vh;
+    cursor: pointer;
+    right: 20px;
+}
+
+.inactive{
+    display: none;
+}

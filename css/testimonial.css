@@ -1,7 +1,7 @@
 .testimonial-section{
     width: 100vw;
     background-color: var(--bgCol);
-    padding: 20px 0 40px 0;
+    padding: 20px 0;
 }
 
 .carousel{
@@ -34,6 +34,7 @@
     width: 100vw;
     margin: 20px 30px;
     margin-right: 0;
+    margin-bottom: 0;
     display: flex;
     overflow-x: hidden;
 }
@@ -139,6 +140,20 @@
 }
 
 @media screen and (max-width: 768px){
+    .testimonial{
+        width: 40vw;
+        margin-left: 12px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .testimonial{
+        width: 70vw;
+        margin-left: 53px;
+    }
+}
+
+@media screen and (max-width: 425px){
     .testimonial{
         width: 80vw;
         margin-left: 12px;

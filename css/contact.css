@@ -5,9 +5,147 @@
 }
 
 .contact{
-    width: 90vw;
+    width: 85vw;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: var(--white);
+    padding-top: 35px;
+}
+
+.myInfo{
+    margin: 10px;
+}
+
+.phone,.email,.location{
+    display: flex;
+}
+
+.icon{
+    width: 35px;
+    height: 40px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-phone,.fa-envelope-o,.fa-map-marker{
+    color: var(--secCol);
+}
+
+.numnum > a, .mailEmail > a,.locaLocation{
+    color: rgb(102, 100, 100);
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+}
+
+.numnum > a:hover, .mailEmail > a:hover, .locaLocation:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.numname, .mailname,.locaname{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.phone, .email{
+    margin-bottom: 40px;
+}
+
+.location{
+    margin-bottom: 25px;
+}
+
+.form{
+    padding: 0 40px;
+    margin-bottom: 30px;
+}
+
+.nameEmail{
+    display: flex;
+}
+
+.nameEmail,.subject,.message{
+    padding-bottom: 25px;
+}
+
+#Name,#Email{
+    margin-right: 15px;
+}
+
+#Name,#Email,#Subject,#Message{
+    
+    width: 230px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 5px grey;
+    outline: none;
+    padding-left: 8px;
+    border: 1px solid white;
+}
+
+#Subject,#Message{
+    width: 480px;
+}
+
+#Message{
+    height: 150px;
+}
+
+#Name:focus,#Email:focus,#Subject:focus,#Message:focus{
+    box-shadow: inset 0 0 5px grey;
+}
+
+textarea{
+    resize: none;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+}
+
+#Submit{
+    border: none;
+    box-shadow: 0 0 9px black;
+    outline: none;
+    background-color: var(--secCol);
+    width: 150px;
+    height: 45px;
+    color: var(--white);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#Submit:hover{
+    box-shadow: inset 0 0 9px black;
+}
+
+@media screen and (max-width: 500px){
+    .contact{
+        flex-direction: column;
+    }
+    .nameEmail{
+        flex-direction: column;
+    }    
+    #Name{
+        margin-right: unset;
+        margin-bottom: 15px;
+    }
+    .nameEmail,.subject,.message{
+        padding-bottom: 15px;
+    }
+    #Name,#Email,#Subject,#Message{
+        width: 80vw;
+        margin-left: 15px;
+    }
+    .phone, .email, .location{
+        margin-bottom: 20px;
+    }
 }
