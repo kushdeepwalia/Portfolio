@@ -4,6 +4,7 @@ var waypoint = new Waypoint({
     element: document.getElementById('home'),
     handler: function(direction){
         document.getElementById('nav').style.position = "absolute";
+		document.getElementById('homeSec').setAttribute('style','position: sticky; top: 0; z-index: 1000;');
     }
 })
 
