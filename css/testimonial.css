@@ -1,0 +1,146 @@
+.testimonial-section{
+    width: 100vw;
+    background-color: rgb(221, 208, 208);
+    padding: 20px 0 40px 0;
+}
+
+.carousel{
+    width: 100vw;
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#prev{
+    position: absolute;
+    top: 46%;
+    left: 20px;
+    z-index: 23;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#next{
+    cursor: pointer;
+    z-index: 23;
+    position: absolute;
+    font-size: 1.3rem;
+    top: 46%;
+    right: 20px;
+}
+
+.container{
+    width: 100vw;
+    margin: 20px 30px;
+    margin-right: 0;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.testimonial{
+    width: 30vw;
+    margin: 20px 0;
+    margin-left: 5px;
+    background-color: var(--white);
+    box-shadow: 0 0 5px black;
+    z-index: 2;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.display{
+    display: none;
+    opacity: 0;
+}
+
+.animate-ani{
+    animation-name: translateLeftSide;
+    animation-duration: 2.5s;
+    animation-delay: 1s;
+    /* animation-fill-mode: forwards; */
+}
+
+.animate{
+    animation-delay: 1s;
+    animation-name: translateLeft;
+    animation-duration: 2.5s;
+    /* animation-fill-mode: forwards; */
+}
+
+@keyframes translateLeft{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(-41vw);
+        opacity: 0;
+        display: none;
+    }
+}
+@keyframes translateLeftSide{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateX(-41vw);
+        opacity: 1;
+        display: block;
+    }
+}
+
+.msg{
+    font-size: 0.9rem;
+    display: flex;
+}
+
+.red{
+    color: var(--secCol);
+    font-size: 20px;
+}
+
+.testmsg{
+    padding-left: 10px;
+}
+
+.detail{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.photo{
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.photo > img{
+    width: 40px;
+}
+
+.nameRole{
+    padding-top: 4px;
+}
+
+.role{
+    font-size: 0.7rem;
+}
+
+@media screen and (max-width: 768px){
+    .testimonial{
+        width: 80vw;
+        margin-left: 12px;
+    }
+}

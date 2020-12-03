@@ -1,18 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-}
-
 :root{
-    --black: black;
-    --white: white;
     --headerHeight: 15vh;
     --grey: #3c4858;
     --dullwhite: #e4d7d7e3;
-    --priColor: #2f55d4;
 }
 
 .btn{
@@ -30,7 +19,7 @@
 }
 
 .newBtn{
-    background-color: var(--priColor);
+    background-color: var(--priCol);
     color: var(--white);
 }
 
@@ -56,7 +45,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 30px 0 50px 0;
+    padding: 30px 0 0 0;
 }
 
 .plan-container{
@@ -77,8 +66,8 @@
     transition: 0.5s ease-in-out;
     background-color: var(--white);
     box-shadow: 0 5px 13px rgba(60, 72, 88, 0.2) !important;
-    border-bottom: 3px solid var(--priColor) !important;    
-    border-top: 3px solid var(--priColor) !important;  
+    border-bottom: 3px solid var(--priCol) !important;    
+    border-top: 3px solid var(--priCol) !important;  
 }
 
 .plan-image{

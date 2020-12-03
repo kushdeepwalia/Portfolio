@@ -1,189 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kushdeep Walia">
-    <meta name="description" content="Web Developer, Freelancer">
-    <meta name="og:image" content="./images/My Pic.jpeg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kushdeep Walia" />
+    <meta name="description" content="Web Developer, Freelancer" />
+    <meta name="og:image" content="./images/My Pic.jpeg" />
     <title>Kushdeep Walia</title>
     <!-- Header CSS -->
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/header.css" />
     <!-- Hero CSS -->
-    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/hero.css" />
     <!-- About CSS -->
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/about.css" />
     <!-- Skill CSS -->
-    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/skills.css" />
     <!-- Project Cards CSS -->
-    <link rel="stylesheet" href="./css/project-card.css">
+    <link rel="stylesheet" href="./css/project-card.css" />
+    <!-- Testimonial CSS -->
+    <link rel="stylesheet" href="./css/testimonial.css" />
+    <!-- owl CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
     <!-- font awesome -->
     <script src="https://use.fontawesome.com/6bba5b5ec4.js"></script>
-</head>
-<body>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
+  <body>
     <!-- Header Begins -->
 
     <header class="header" id="home">
-        <img src="./images/My Pic.jpeg" alt="" id="myPic">
-        <nav class="nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hamicon" id="hamicon">
-            <div class="icon-line"></div>
-            <div class="icon-line"></div>
-            <div class="icon-line"></div>
-        </div>
-    </header>
-
-    <nav class="nav" id="nav">
+      <img src="./images/My Pic.jpeg" alt="" id="myPic" />
+      <nav class="nav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+      <div class="hamicon" id="hamicon">
+        <div class="icon-line"></div>
+        <div class="icon-line"></div>
+        <div class="icon-line"></div>
+      </div>
+    </header>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
-    
+
     <!-- Header Ends -->
     <!-- Hero Box Starts -->
-    
+
     <div class="hero">
-        <div class="myPic">
-            <img src="./images/myCutOut.png" alt="" id="myHeroPic">
+      <div class="myPic">
+        <img src="./images/myCutOut.png" alt="" id="myHeroPic" />
+      </div>
+      <div class="myIntro">
+        <div class="name">Heyy..<br />This is <span>Kushdeep Walia</span></div>
+        <div class="line1">
+          I am a <span id="line1"></span><span class="cursor">&nbsp;</span>
         </div>
-        <div class="myIntro">
-            <div class="name">Heyy..<br>This is <span>Kushdeep Walia</span></div>
-            <div class="line1">I am a <span id="line1"></span><span class="cursor">&nbsp;</span></div>
-            <div class="line2" id="line2">Love to play with Developer Tools</div>
-            <div class="buttons">
-                <div class="downloadCV"><a href="#">Download CV</a></div>
-                <div class="hireME"><a href="mailto:kushdeepwalia@outlook.com">Hire Me</a></div>
-            </div>
+        <div class="line2" id="line2">Love to play with Developer Tools</div>
+        <div class="buttons">
+          <div class="downloadCV"><a href="#">Download CV</a></div>
+          <div class="hireME">
+            <a href="mailto:kushdeepwalia@outlook.com">Hire Me</a>
+          </div>
         </div>
+      </div>
     </div>
-    
+
     <!-- Hero Box Ends -->
     <!-- About Starts -->
-    
+
     <section id="about" class="about-section">
-        <div class="heading">About</div>
-        <div class="about-box">
-            <div class="about-content">
-                <span>
-                    Hey! I am Kushdeep Walia, pursuing my Bachelor's in Computer Science at IP University. I am web developer and have experience of more than 3 years in CPP Programming.
-                </span>
-            </div>
-            <div class="contactButton">
-                <button>Contact Me</button>
-            </div>
+      <div class="heading">About</div>
+      <div class="about-box">
+        <div class="about-content">
+          <span>
+            Hey! I am Kushdeep Walia, pursuing my Bachelor's in Computer Science
+            at IP University. I am web developer and have experience of more
+            than 3 years in CPP Programming.
+          </span>
         </div>
+        <div class="contactButton">
+          <button>Contact Me</button>
+        </div>
+      </div>
     </section>
-    
+
     <!-- About Ends -->
     <!-- Education Starts -->
-    
+
     <section id="edu" class="edu-section">
-        <div class="heading">Education</div>
-        <div class="edu-boxes">
-            <div class="edu-box">
-                <div class="edu-dot"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
-                <div class="edu-content">
-                    <div class="card-content">
-                        <h3>IP University</h3>
-                        <div class="card-info">
-                            <h4>Guru Tegh Bahadur Institute of Technology</h4>
-                            <h5>Aug 2018 - Present</h5>
-                            <p>Dept. of Computer Science</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="heading">Education</div>
+      <div class="edu-boxes">
+        <div class="edu-box">
+          <div class="edu-dot">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+          </div>
+          <div class="edu-content">
+            <div class="card-content">
+              <h3>IP University</h3>
+              <div class="card-info">
+                <h4>Guru Tegh Bahadur Institute of Technology</h4>
+                <h5>Aug 2018 - Present</h5>
+                <p>Dept. of Computer Science</p>
+              </div>
             </div>
-            <div class="edu-box">
-                <div class="edu-dot"><i class="fa fa-certificate" aria-hidden="true"></i></div>
-                <div class="edu-content">
-                    <div class="card-content">
-                        <h3>Schooling</h3>
-                        <div class="card-info">
-                            <h4>S.S. Mota Singh Sr. Sec. Model School</h4>
-                            <h5>Apr 2005 - Mar 2018</h5>
-                            <p>Non Medical Student</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="edu-box">
+          <div class="edu-dot">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+          </div>
+          <div class="edu-content">
+            <div class="card-content">
+              <h3>Schooling</h3>
+              <div class="card-info">
+                <h4>S.S. Mota Singh Sr. Sec. Model School</h4>
+                <h5>Apr 2005 - Mar 2018</h5>
+                <p>Non Medical Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <!-- Education Ends -->
     <!-- Skills Starts -->
-    
+
     <section id="skills" class="skill-section">
-        <div class="heading">Skills</div>
-        <div class="skill-box">
-            <div class="skill-left">
-                <div class="skill" id="htmlCSS">
-                    <div class="skill-nanum">
-                        <div class="skill-name">HTML/CSS</div>
-                        <div class="skill-num">80%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <div class="skill" id="php">
-                    <div class="skill-nanum">
-                        <div class="skill-name">Php</div>
-                        <div class="skill-num">90%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <div class="skill" id="javascript">
-                    <div class="skill-nanum">
-                        <div class="skill-name">Javascript</div>
-                        <div class="skill-num">75%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <div class="skill" id="teamManage">
-                    <div class="skill-nanum">
-                        <div class="skill-name">Team Managing/Leading</div>
-                        <div class="skill-num">85%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
-                <div class="skill" id="ccpp">
-                    <div class="skill-nanum">
-                        <div class="skill-name">C/C++ Programming</div>
-                        <div class="skill-num">90%</div>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-fill"></div>
-                    </div>
-                </div>
+      <div class="heading">Skills</div>
+      <div class="skill-box">
+        <div class="skill-left">
+          <div class="skill" id="htmlCSS">
+            <div class="skill-nanum">
+              <div class="skill-name">HTML/CSS</div>
+              <div class="skill-num">80%</div>
             </div>
-            <div class="skill-right">
-                <div class="img"><img src="./images/My Pic.jpeg" alt=""></div>
-                <div class="myName">Kushdeep Walia</div>
-                <div class="job-app">Web Developer</div>
-                <div class="hireME"><a href="mailto:kushdeepwalia@outlook.com">Hire Me</a></div>
+            <div class="skill-bar">
+              <div class="skill-fill"></div>
             </div>
+          </div>
+          <div class="skill" id="php">
+            <div class="skill-nanum">
+              <div class="skill-name">Php</div>
+              <div class="skill-num">90%</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+          <div class="skill" id="javascript">
+            <div class="skill-nanum">
+              <div class="skill-name">Javascript</div>
+              <div class="skill-num">75%</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+          <div class="skill" id="teamManage">
+            <div class="skill-nanum">
+              <div class="skill-name">Team Managing/Leading</div>
+              <div class="skill-num">85%</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
+          <div class="skill" id="ccpp">
+            <div class="skill-nanum">
+              <div class="skill-name">C/C++ Programming</div>
+              <div class="skill-num">90%</div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill"></div>
+            </div>
+          </div>
         </div>
+        <div class="skill-right">
+          <div class="img"><img src="./images/My Pic.jpeg" alt="" /></div>
+          <div class="myName">Kushdeep Walia</div>
+          <div class="job-app">Web Developer</div>
+          <div class="hireME">
+            <a href="mailto:kushdeepwalia@outlook.com">Hire Me</a>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <!-- Skills Ends -->
     <!-- Services Starts -->
 
@@ -198,19 +214,127 @@
             <div class="service-card"></div>
         </div>
     </section> -->
-    
+
     <!-- Services Ends -->
     <!-- Projects Begin -->
 
     <section id="project" class="project-section">
-        <div class="heading">Projects</div>
-        <div class="project-cards">
-            <div class="row" id="row">
-            </div>
-        </div>
+      <div class="heading">Projects</div>
+      <div class="project-cards">
+        <div class="row" id="row"></div>
+      </div>
     </section>
 
     <!-- Projects Ends -->
+    <!-- Testimonial Begins -->
+
+    <section id="testimonial" class="testimonial-section">
+      <div class="heading">Testimonials</div>
+      <div class="carousel">
+        <div class="container owl-carousel" id="container">
+          <div class="testimonial">
+            <div class="msg">
+              <span class="red"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+              <span class="textmsg"><br />It is always exiting and wonderful experience working
+                with him. He just sticks to a work and leaves it after
+                completion. That's a good quality that I think he owns.</span>
+            </div>
+            <div class="detail">
+              <div class="photo">
+                <img
+                  src="https://drive.google.com/thumbnail?id=1zJTWD8NTO3DpramHhs2DVaKfLxI94huK"
+                />
+              </div>
+              <div class="nameRole">
+                <div class="testname">Deepak Kumar</div>
+                <div class="role">Team Member</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="msg">
+                <span class="red"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+                <span class="textmsg"><br />Hardworking and Dedicated person. He is determined towards work and gives spark to the team. I am working with him since a long time. I have seen his growth and its incredible.</span>
+            </div>
+            <div class="detail">
+              <div class="photo">
+                <img
+                  src="https://drive.google.com/thumbnail?id=1AL1slKWPnEIkAV8RV6j0rO4iMvYJdcM7"
+                />
+              </div>
+              <div class="nameRole">
+                <div class="testname">Aastha Bhasin</div>
+                <div class="role">Team Member</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="msg">
+              <span class="red"
+                ><i class="fa fa-quote-left" aria-hidden="true"></i></span
+              ><span class="textmsg"
+                ><br />I am really happy with his service, it was exceptional. A
+                company website was developed within 3 days. I would highly
+                recommend him for all website needs.
+              </span>
+            </div>
+            <div class="detail">
+              <div class="photo">
+                <img
+                  src="https://drive.google.com/thumbnail?id=1XVI4GXepM728bTmCRIRpJ0Y6f8To9Mcv"
+                />
+              </div>
+              <div class="nameRole">
+                <div class="testname">Jasveen Kaur</div>
+                <div class="role">Customer</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="msg">
+              <span class="red"
+                ><i class="fa fa-quote-left" aria-hidden="true"></i></span
+              ><span class="textmsg"
+                ><br />It is a great experience working with him. He is a very
+                dedicated and innovative person. He always comes up with a new
+                idea. I am working with him since long time.
+              </span>
+            </div>
+            <div class="detail">
+              <div class="photo">
+                <img
+                  src="https://drive.google.com/thumbnail?id=1LWzMEScSSsyCMGkfy_iZ4BxLY130rPAw"
+                />
+              </div>
+              <div class="nameRole">
+                <div class="testname">Jaskeerat Singh</div>
+                <div class="role">Team Member</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="msg">
+              <span class="red"><i class="fa fa-quote-left" aria-hidden="true"></i></span>
+              <span class="textmsg"><br />He is dedicated towards his work and deliver on time. Provides Genuine and satisfying work. He always comes up with a new idea.</span>
+            </div>
+            <br>
+            <div class="detail">
+              <div class="photo">
+                <img
+                  src="https://drive.google.com/thumbnail?id=109FZdpTlkPX7QAX4brXVnFDcrwAcaJ3m"
+                />
+              </div>
+              <div class="nameRole">
+                <div class="testname">Gaurav Tiwari</div>
+                <div class="role">Customer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Ends -->
 
     <!-- Header Js -->
     <script src="./js/header.js"></script>
@@ -218,5 +342,9 @@
     <script src="./js/hero.js"></script>
     <!-- Project Card Js -->
     <script src="./js/project-card.js"></script>
-</body>
+    <!-- Testimonial Js -->
+    <!-- <script src="./js/testimonial.js"></script> -->
+    <!-- Testimonial -->
+    <script>$(".container").owlCarousel({loop: true,autoplay: true,autoplayTimeOut: 100,autoplayHoverPause: true,responsive: {0 : {items: 1},768 : {items: 2},1000 : {items: 3}}});</script>
+  </body>
 </html>
