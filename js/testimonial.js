@@ -14,8 +14,8 @@ fetch(
 )
 .then((res) => res.json())
 .then((data) => {
-    document.getElementsByTagName('head')[0].innerHTML = document.getElementsByTagName('head')[0].innerHTML + '<script src="https://code.jquery.com/jquery-3.5.1.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>';
-    document.getElementsByTagName('body')[0].innerHTML = document.getElementsByTagName('body')[0].innerHTML + '<script>$(".container").owlCarousel({loop: true,autoplay: true,autoplayTimeOut: 100,autoplayHoverPause: true,responsive: {0 : {items: 1},768 : {items: 2},1000 : {items: 3}}});</script>';
+    // document.getElementsByTagName('head')[0].innerHTML = document.getElementsByTagName('head')[0].innerHTML + '<script src="https://code.jquery.com/jquery-3.5.1.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>';
+    // document.getElementsByTagName('body')[0].innerHTML = document.getElementsByTagName('body')[0].innerHTML + '<script>$(".container").owlCarousel({loop: true,autoplay: true,autoplayTimeOut: 100,autoplayHoverPause: true,responsive: {0 : {items: 1},768 : {items: 2},1000 : {items: 3}}});</script>';
     var totalProjects = data["feed"]["entry"].length;
     var testimonials = data["feed"]["entry"];
     var container = document.getElementById('container');
