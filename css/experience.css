@@ -31,6 +31,14 @@
     line-height: 25px;
 }
 
+.compname > a{
+    color: var(--black);
+}
+
+.compname > a:hover{
+    text-decoration: underline;
+}
+
 .compname{
     text-transform: uppercase;
     font-size: 1.5rem;
