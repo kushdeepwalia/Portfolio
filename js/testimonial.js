@@ -18,6 +18,8 @@ fetch(
     // document.getElementsByTagName('body')[0].innerHTML = document.getElementsByTagName('body')[0].innerHTML + '<script>$(".container").owlCarousel({loop: true,autoplay: true,autoplayTimeOut: 100,autoplayHoverPause: true,responsive: {0 : {items: 1},768 : {items: 2},1000 : {items: 3}}});</script>';
     var totalProjects = data["feed"]["entry"].length;
     var testimonials = data["feed"]["entry"];
+    console.log(testimonials)
+    document.getElementById('container').style.display = "flex";
     var container = document.getElementById('container');
 
     for (let i = 0; i < totalProjects; i++) {
@@ -66,4 +68,29 @@ fetch(
         nameRole.appendChild(role);
 
     }
-});
+})
+.then(() => {
+  container.classList.add('owl-carousel');
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      autoplay: true,
+      autoplayTimeOut: 100,
+      autoplayHoverPause: true,
+      responsive: {
+        0 : {
+          items: 1
+        },
+        600 : {
+          items: 2
+        },
+        1000 : {
+          items: 3
+        }
+      }
+    })
+  })
+})
+.catch((err) => {
+  console.log("Error");
+})

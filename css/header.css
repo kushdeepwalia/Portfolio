@@ -4,14 +4,16 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 :root{
-    --priCol: #2f55d4;
+    --priCol: #0f151d;
     --white: white;
     --black: black;
     --secCol: #f5293d;
-    --bgCol: #ddd0d0;
+    --bgCol: #d1d1d1;
+    --lightGrey: #a3a3a3;
 }
 
 html{
@@ -120,6 +122,7 @@ html{
     position: relative;
     padding-bottom: 4px;
     cursor: pointer;
+    font-size: 22px;
 }
 
 .nav-ham{

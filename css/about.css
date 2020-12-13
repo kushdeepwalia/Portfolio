@@ -9,14 +9,13 @@
     justify-content: center;
     font-size: 45px;
     /* margin-top: 10px; */
+    text-transform: uppercase;
 }
 
 .about-box{
     width: 70vw;
     background-color: white;
-    box-shadow: 0 0 10px 2px var(--black);
     margin: 3vh auto 0 auto;
-    border-radius: 10px;
     padding: 40px 0 25px 0;
 }
 
@@ -25,6 +24,7 @@
     margin: 0 auto;
     text-align: center;
     padding-bottom: 6vh;
+    font-weight: bold;
 }
 
 .contactButton{
@@ -37,13 +37,12 @@
 
 .contactButton > button{
     padding: 10px 13px;
-    border-radius: 15px;
     color: white;
     font-size: 20px;
     background-color: var(--secCol);
-    box-shadow: 0 0 10px black;
     outline: none;
     border: none;
+    font-weight: bold;  
 }
 
 /* education */
@@ -174,20 +173,21 @@
 } */
 
 .card-content{
-    padding: 20px;
-    
+    padding: 20px;  
 }
 
 .card-content h3{
     margin: 10px 0;
     font-weight: normal;
     font-size: 1.4em;
+    font-weight: bold;  
 }
 
 .card-info h4{
     margin: 10px 0;
     font-size: 1.2em;
     font-weight: normal;
+    font-weight: bold;  
 }
 
 .card-info h5,.card-info p{
@@ -195,6 +195,7 @@
     margin: 10px 0;
     font-weight: normal;
     font-size: 1.1em;
+    font-weight: bold;  
 }
 
 @media screen and (max-width: 768px){

@@ -17,7 +17,7 @@ body{
 }
 
 #myHeroPic{
-    width: 255px;
+    width: 355px;
     height: 61vh;
     position: absolute;
     right: 100px;
@@ -32,7 +32,7 @@ body{
 .myIntro{
     position: absolute;
     left: 55%;
-    top: 20%;
+    top: 6%;
     color: var(--white);
 }
 
@@ -52,7 +52,7 @@ body{
 }
 
 #line1{
-    color: var(--black);
+    color: var(--lightGrey);
 }
 
 .line2{
@@ -62,14 +62,14 @@ body{
 .cursor{
     display: inline-block;
     width: 3px;
-    background-color: var(--black);
+    background-color: var(--white);
     border-radius: 20px;
     margin-left: 0.3rem;
     animation: blink 1s infinite;
 }
 
 @keyframes blink{
-    0%, 49%, 100% {background-color: var(--black);}
+    0%, 49%, 100% {background-color: var(--white);}
     50%, 99%{background-color: transparent;}
 }
 
@@ -85,9 +85,8 @@ body{
 .myIntro > .buttons > .downloadCV{
     margin-right: 15px;
     padding: 8px 10px;
-    border-radius: 20px;
     background-color: var(--secCol);
-    box-shadow: 0 0 10px black;
+    font-weight: bold;  
 }
 
 .downloadCV > a,.hireME > a{
@@ -97,9 +96,8 @@ body{
 .hireME{
     margin-left: 15px;
     padding: 8px 17px;
-    border-radius: 20px;
     background-color: var(--secCol);
-    box-shadow: 0 0 10px black;
+    font-weight: bold;  
 }
 
 @media screen and (max-width: 768px){
