@@ -1,3 +1,5 @@
+Waypoint;
+
 var waypoint = new Waypoint({
     element: document.getElementById('home'),
     handler: function(direction){
