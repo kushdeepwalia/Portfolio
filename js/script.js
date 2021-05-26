@@ -1,4 +1,4 @@
-import 'waypoints/lib/noframework.waypoints.min.js';
+import 'node_modules/waypoints/lib/noframework.waypoints.min.js';
 
 var waypoint = new Waypoint({
     element: document.getElementById('home'),
