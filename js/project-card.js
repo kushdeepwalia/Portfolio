@@ -8,19 +8,19 @@ function extractor(url_id) {
     }
     return url;
 }
-
+// 
 fetch(
-    "https://spreadsheets.google.com/feeds/list/1stjr8UVQ3RufMI8v-y8NdZ9AY_-DKpij7BV_wB0zNV8/1/public/full?alt=json"
+    "https://sheets.googleapis.com/v4/spreadsheets/1stjr8UVQ3RufMI8v-y8NdZ9AY_-DKpij7BV_wB0zNV8/values:batchGet?ranges=A2:U133&key=AIzaSyATGC19rqvjo4HJs8uMHFoittxEeoNViPs"
 )
 .then((res) => res.json())
 .then((data) => {
-    var totalProjects = data["feed"]["entry"].length;
-    var projects = data["feed"]["entry"];
+    var totalProjects = data.valueRanges[0].values.length;
+    var projects = data.valueRanges[0].values;
     var project = document.getElementById('row');
 
     for (let i = 0; i < totalProjects; i++) 
     {
-        if(projects[i]["gsx$approved"]["$t"] === "1")
+        if(projects[i][5] === "1")
         {
             var projectContainer = document.createElement('div');
             projectContainer.classList.add('plan-container');
@@ -31,7 +31,7 @@ fetch(
             projectContainer.appendChild(projectImage);
 
             var proImage = document.createElement('img');
-            proImage.setAttribute("src", extractor(projects[i]['gsx$image']['$t']));
+            proImage.setAttribute("src", extractor(projects[i][2]));
             projectImage.appendChild(proImage);
             
             var projectName = document.createElement('div');
@@ -40,7 +40,7 @@ fetch(
             
             var proName = document.createElement('span');
             proName.classList.add('amount');
-            proName.innerText = projects[i]["gsx$name"]["$t"];
+            proName.innerText = projects[i][1];
             projectName.appendChild(proName);
 
             var projectDesc = document.createElement('div');
@@ -48,7 +48,7 @@ fetch(
             projectContainer.appendChild(projectDesc);
 
             var para = document.createElement('p');
-            para.innerText = projects[i]["gsx$desc"]["$t"];
+            para.innerText = projects[i][3];
             projectDesc.appendChild(para);
 
             var button = document.createElement('button');
@@ -56,7 +56,7 @@ fetch(
             projectDesc.appendChild(button);
 
             var anchor = document.createElement('a');
-            anchor.setAttribute('href',projects[i]["gsx$url"]["$t"]);
+            anchor.setAttribute('href',projects[i][4]);
             anchor.setAttribute('target',"_blank");
             anchor.innerText = "Project Link";
             button.appendChild(anchor);
