@@ -8,14 +8,6 @@ function extractor(url_id) {
     }
     return url;
 }
-function sortFunction(a, b) {
-    if (a[6] === b[6]) {
-        return 0;
-    }
-    else {
-        return (a[6] < b[6]) ? -1 : 1;
-    }
-}
 // 
 fetch(
     "https://sheets.googleapis.com/v4/spreadsheets/1stjr8UVQ3RufMI8v-y8NdZ9AY_-DKpij7BV_wB0zNV8/values:batchGet?ranges=A2:U133&key=AIzaSyATGC19rqvjo4HJs8uMHFoittxEeoNViPs"
@@ -24,8 +16,6 @@ fetch(
 .then((data) => {
     var totalProjects = data.valueRanges[0].values.length;
     var projects = data.valueRanges[0].values;
-    const sortedResponse = projects.sort(sortFunction);
-    console.log(sortedResponse);
     var project = document.getElementById('row');
 
     for (let i = 0; i < totalProjects; i++) 
