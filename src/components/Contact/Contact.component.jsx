@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
 import Heading from '../common/heading/Heading.component';
 
-const Contact = (ref) => {
+const Contact = (_props, ref) => {
    return (
       <section ref={ref} className='h-full w-full py-16 px-5'>
          <div className='h-full w-full px-3'>

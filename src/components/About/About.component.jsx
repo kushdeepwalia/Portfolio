@@ -4,7 +4,7 @@ import Heading from '../common/heading/Heading.component';
 import aboutMyPic from "../../images/aboutMyPic.png"
 import { BiChevronRight } from 'react-icons/bi';
 
-const About = (ref) => {
+const About = (_props, ref) => {
    return (
       <section ref={ref} className='h-full w-full pt-16 px-5'>
          <div className='h-full w-full px-3'>
