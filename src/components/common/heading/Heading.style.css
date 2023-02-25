@@ -1,0 +1,31 @@
+.heading {
+   font-size: 32px;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   padding-bottom: 20px;
+   position: relative;
+   color: var(--headingCol);
+}
+
+.heading::before {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 120px;
+   height: 1px;
+   background: var(--underlineGrey);
+   bottom: 1px;
+   left: calc(50% - 60px);
+}
+
+.heading::after {
+   content: "";
+   position: absolute;
+   display: block;
+   width: 40px;
+   height: 3px;
+   background: var(--priCol);
+   bottom: 0;
+   left: calc(50% - 20px);
+}
