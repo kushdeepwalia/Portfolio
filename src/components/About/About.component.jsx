@@ -4,7 +4,7 @@ import Heading from '../common/heading/Heading.component';
 import aboutMyPic from "../../images/aboutMyPic.png"
 import { BiChevronRight } from 'react-icons/bi';
 
-const About = ({ }, ref) => {
+const About = (ref) => {
    return (
       <section ref={ref} className='h-full w-full pt-16 px-5'>
          <div className='h-full w-full px-3'>
@@ -14,7 +14,7 @@ const About = ({ }, ref) => {
             </div>
             <div className='flex flex-wrap justify-between w-full h-max'>
                <div className='w-1/3 pr-7'>
-                  <img src={aboutMyPic} alt="Photo" className='w-full h-auto' />
+                  <img src={aboutMyPic} alt="kushdeepwalia" className='w-full h-auto' />
                </div>
                <div className='w-2/3'>
                   <h3 className='font-bold text-2xl text-headingCol mb-2'>MERN Stack Web Developer & Freelancer.</h3>

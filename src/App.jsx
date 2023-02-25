@@ -13,6 +13,7 @@ import Testimonial from './components/Testimonial/Testimonial.component';
 
 const App = () => {
    const [active, setActive] = useState("Home");
+   // eslint-disable-next-line
    const { x, y } = useWindowScroll();
    const ref = {
       homeRef: useRef(null),

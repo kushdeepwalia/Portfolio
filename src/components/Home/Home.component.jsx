@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useRef } from 'react'
+import React, { forwardRef } from 'react'
 import HeroBg from "../../images/hero-bg.jpg"
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai"
 import { IoLogoGithub } from "react-icons/io"
@@ -6,7 +6,7 @@ import { TfiLinkedin } from "react-icons/tfi"
 import { FaFacebookF } from "react-icons/fa"
 import TypewriterComponent from 'typewriter-effect'
 
-const Home = ({ }, ref) => {
+const Home = (ref) => {
    return (
       <section className='w-full h-screen bg-cover' ref={ref} style={{ backgroundImage: `url(${HeroBg})`, backgroundPosition: 'top right' }}>
          <div className='w-full h-screen bg-white/50 pl-48'>
