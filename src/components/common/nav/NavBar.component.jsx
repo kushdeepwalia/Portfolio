@@ -55,7 +55,7 @@ const NavBar = ({ active, setActive }) => {
                         return <li key={index} className='mb-3 group flex cursor-pointer'>
                            <span className='flex p-4 items-center group rounded-full bg-priCol'>
                               <item.activeIcon size={24} className='text-white' />
-                              <span className='ml-2 hidden font-semibold text-white text-lg group-hover:block'>{item.state}</span>
+                              <span className='ml-2 hidden font-semibold text-white group-hover:block'>{item.state}</span>
                            </span>
                         </li>
                      }
@@ -63,7 +63,7 @@ const NavBar = ({ active, setActive }) => {
                         return <li key={index} className='mb-3 group flex cursor-pointer'>
                            <span className='flex p-4 items-center rounded-full group-hover:bg-priCol group-hover:text-white bg-backGrey' onClick={() => setActive(false, item.state)}>
                               <item.inActiveIcon size={24} className='group-hover:bg-priCol group-hover:text-white' />
-                              <span className='ml-2 hidden font-semibold text-white text-lg group-hover:block'>{item.state}</span>
+                              <span className='ml-2 hidden font-semibold text-white group-hover:block'>{item.state}</span>
                            </span>
                         </li>
                      }

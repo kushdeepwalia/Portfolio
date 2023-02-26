@@ -33,7 +33,7 @@ const Resume = (_props, ref) => {
                         <p className='text-justify'>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
                      </div>
                      <div className="resume-item pb-0">
-                        <h4>Senior High School (10+2)</h4>
+                        <h4>Senior Secondary (10+2)</h4>
                         <h5>2017 - 2018</h5>
                         <p className='italic'>S.S. Mota Singh Sr. Sec. Model School, Delhi, IN</p>
                         <p className='text-justify'>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>

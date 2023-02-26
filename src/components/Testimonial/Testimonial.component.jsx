@@ -1,6 +1,5 @@
 import React, { forwardRef, useEffect, useState } from 'react'
 import Heading from '../common/heading/Heading.component';
-import aastha from "../../images/aastha.jpg"
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -47,7 +46,7 @@ const Testimonial = (_props, ref) => {
             <div className='text-center pb-8'>
                <Heading>Testimonial</Heading>
             </div>
-            <div className='flex flex-wrap justify-between w-full h-max pl-10'>
+            <div className='flex flex-wrap justify-between w-full h-max px-5'>
                <OwlCarousel
                   loop
                   slideBy={1}
@@ -55,14 +54,12 @@ const Testimonial = (_props, ref) => {
                   className='owl-theme'
                   autoplay={true}
                   autoplaySpeed={true}
-                  autoplayTimeout={2000}
+                  autoplayTimeout={3000}
                   autoplayHoverPause
-                  dots={false}
                   items={returnItems()}
                >
                   {
                      data.map((item, index) => {
-                        console.log(item)
                         return <div className='container' key={index}>
                            <div className="upperContainer">
                               <div className="invertedCommaContainer">
@@ -76,7 +73,7 @@ const Testimonial = (_props, ref) => {
                               </div>
                            </div>
                            <div className='lowerContainer'>
-                              {item.message.length > 330 ? item.message.slice(0, 330) : item.message} {/* 330 characters only */}
+                              {item.message.length > 320 ? item.message.slice(0, 320) : item.message}
                            </div>
                         </div>
                      })
