@@ -50,7 +50,6 @@ const App = () => {
    }
 
    const updateOnScroll = () => {
-      console.log("Y", y);
       const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       if (window.scrollY === height) {
          if (active !== "Contact")
@@ -99,9 +98,13 @@ const App = () => {
 
    return (
       <>
-         <NavBar active={active} setActive={handleUpdate} />
+         {
+            window.innerWidth <= 992 ?
+               null :
+               <NavBar active={active} setActive={handleUpdate} />
+         }
          <Home ref={ref.homeRef} />
-         <div className='w-full pl-24 pr-4 min-[1300px]:pl-44 min-[1300px]:pr-24'>
+         <div className='w-full pl-24 pr-4 min-[1300px]:pl-44 min-[1300px]:pr-24 max-[992px]:p-0'>
             <About ref={ref.aboutRef} />
             <Skills ref={ref.skillRef} />
             <Resume ref={ref.resumeRef} />

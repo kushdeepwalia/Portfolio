@@ -13,9 +13,9 @@
    position: absolute;
    display: block;
    width: 120px;
-   height: 1px;
-   background: var(--underlineGrey);
-   bottom: 1px;
+   height: 3px;
+   background: var(--backGrey);
+   bottom: 0;
    left: calc(50% - 60px);
 }
 

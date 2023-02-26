@@ -30,7 +30,7 @@ const About = (_props, ref) => {
                            <li className='flex items-center mb-4'>
                               <BiChevronRight size={28} className='text-priCol' />
                               <span className='mx-1 font-bold'>Phone :</span>
-                              <a href='tel:+919953607706' rel='noreferrer' style={{ fontFamily: 'inter' }} className='font-thin' >+91-9953607706</a>
+                              <a href='tel:+919953607706' rel='noreferrer' style={{ fontFamily: 'inter' }} className='font-light' >+91-9953607706</a>
                            </li>
                            <li className='flex items-center mb-4'>
                               <BiChevronRight size={28} className='text-priCol' />

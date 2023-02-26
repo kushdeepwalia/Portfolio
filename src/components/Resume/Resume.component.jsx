@@ -19,7 +19,7 @@ const Resume = (_props, ref) => {
                         <p className='italic text-justify'>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</p>
                         <ul>
                            <li>New Delhi, Delhi, India</li>
-                           <li><a href='tel:+919953607706' style={{ fontFamily: 'inter' }} rel='noreferrer' target='_blank'>+91-9953607706</a></li>
+                           <li><a href='tel:+919953607706' style={{ fontFamily: 'inter' }} className='font-light' rel='noreferrer' target='_blank'>+91-9953607706</a></li>
                            <li><a href='mailto:admin@kushdeepwalia.in' rel='noreferrer' target='_blank'>admin@kushdeepwalia.in</a></li>
                         </ul>
                      </div>
