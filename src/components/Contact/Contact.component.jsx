@@ -33,7 +33,7 @@ const Contact = (_props, ref) => {
    const [message, setMessage] = useState('');
 
    function handleSubmit() {
-      if (name === '' || email === '' || subject === '' && message === '') {
+      if (name === '' || email === '' || subject === '' || message === '') {
          toast('Enter all details before submitting', {
             autoClose: 2000
          })
