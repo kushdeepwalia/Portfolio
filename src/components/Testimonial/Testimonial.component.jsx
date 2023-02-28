@@ -6,6 +6,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import './Testimonial.style.css'
 import { FaQuoteLeft } from 'react-icons/fa'
 import styled from 'styled-components';
+import apiURL from '../../ApiLink'
 
 export const ImageContainer = styled.div`
    margin-bottom: 10px;
@@ -31,8 +32,7 @@ const Testimonial = (_props, ref) => {
    }
 
    async function fetchData() {
-      const url = 'http://localhost:5000/api/v1/testimonials/';
-      const response = await (await fetch(url)).json();
+      const response = await (await fetch(apiURL + "/testimonials/")).json();
       setData(response.testimonials);
    }
 

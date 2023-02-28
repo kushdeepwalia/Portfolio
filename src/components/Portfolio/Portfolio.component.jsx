@@ -2,6 +2,7 @@ import React, { forwardRef, useEffect, useState } from 'react'
 import { ImLink } from 'react-icons/im';
 import styled, { keyframes } from 'styled-components';
 import Heading from '../common/heading/Heading.component';
+import apiURL from '../../ApiLink'
 
 export const fadeInAnimation = keyframes`
    from{
@@ -23,8 +24,7 @@ const Portfolio = (_props, ref) => {
    const [data, setData] = useState([]);
 
    async function fetchData() {
-      const url = 'http://localhost:5000/api/v1/projects/';
-      const response = await (await fetch(url)).json();
+      const response = await (await fetch(apiURL + "/projects/")).json();
       setData(response.projects);
    }
 

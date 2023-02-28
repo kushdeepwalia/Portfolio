@@ -14,25 +14,25 @@ const Skills = (_props, ref) => {
                   <div className='h-16 text-sm'>
                      <h4 className='py-2.5 m-0 uppercase block font-semibold text-headingCol'>
                         <span>HTML</span>
-                        <span className='float-right'>100%</span>
+                        <span className='float-right'>85%</span>
                      </h4>
                      <div className='rounded bg-backGrey'>
-                        <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
+                        <div className='h-2.5 w-[85%] rounded transition-opacity bg-priCol'></div>
                      </div>
                   </div>
                   <div className='h-16 text-sm'>
                      <h4 className='py-2.5 m-0 uppercase block font-semibold text-headingCol'>
                         <span>CSS</span>
-                        <span className='float-right'>100%</span>
+                        <span className='float-right'>70%</span>
                      </h4>
                      <div className='rounded bg-backGrey'>
-                        <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
+                        <div className='h-2.5 w-[70%] rounded transition-opacity bg-priCol'></div>
                      </div>
                   </div>
                   <div className='h-16 text-sm'>
                      <h4 className='py-2.5 m-0 uppercase block font-semibold text-headingCol'>
                         <span>JavaScript</span>
-                        <span className='float-right'>100%</span>
+                        <span className='float-right'>80%</span>
                      </h4>
                      <div className='rounded bg-backGrey'>
                         <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
@@ -41,27 +41,27 @@ const Skills = (_props, ref) => {
                   <div className='h-16 text-sm'>
                      <h4 className='py-2.5 m-0 uppercase block font-semibold text-headingCol'>
                         <span>PHP</span>
-                        <span className='float-right'>100%</span>
+                        <span className='float-right'>75%</span>
                      </h4>
                      <div className='rounded bg-backGrey'>
-                        <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
+                        <div className='h-2.5 w-[75%] rounded transition-opacity bg-priCol'></div>
                      </div>
                   </div>
                </div>
                <div className='w-1/2 p-3'>
                   <div className='h-16 text-sm'>
                      <h4 className='py-2.5 m-0 uppercase block font-semibold text-headingCol'>
-                        <span>React JS</span>
-                        <span className='float-right'>100%</span>
+                        <span>Express JS</span>
+                        <span className='float-right'>75%</span>
                      </h4>
                      <div className='rounded bg-backGrey'>
-                        <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
+                        <div className='h-2.5 w-[75%] rounded transition-opacity bg-priCol'></div>
                      </div>
                   </div>
                   <div className='h-16 text-sm'>
                      <h4 className='py-2.5 m-0 uppercase block font-semibold text-headingCol'>
-                        <span>Express JS</span>
-                        <span className='float-right'>100%</span>
+                        <span>React JS</span>
+                        <span className='float-right'>80%</span>
                      </h4>
                      <div className='rounded bg-backGrey'>
                         <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
@@ -70,19 +70,19 @@ const Skills = (_props, ref) => {
                   <div className='h-16 text-sm'>
                      <h4 className='py-2.5 m-0 uppercase block font-semibold text-headingCol'>
                         <span>Node JS</span>
-                        <span className='float-right'>100%</span>
+                        <span className='float-right'>75%</span>
                      </h4>
                      <div className='rounded bg-backGrey'>
-                        <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
+                        <div className='h-2.5 w-[75%] rounded transition-opacity bg-priCol'></div>
                      </div>
                   </div>
                   <div className='h-16 text-sm'>
                      <h4 className='py-2.5 m-0 uppercase block font-semibold text-headingCol'>
                         <span>Next JS</span>
-                        <span className='float-right'>100%</span>
+                        <span className='float-right'>50%</span>
                      </h4>
                      <div className='rounded bg-backGrey'>
-                        <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
+                        <div className='h-2.5 w-[50%] rounded transition-opacity bg-priCol'></div>
                      </div>
                   </div>
 
