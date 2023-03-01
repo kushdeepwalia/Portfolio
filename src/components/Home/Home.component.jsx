@@ -13,6 +13,7 @@ const Home = (_props, ref) => {
    async function fetchData() {
       const response = await (await fetch(apiURL + "/positions/")).json();
       let str = [];
+      console.log(await response.positions);
       await response.positions.forEach((item) => {
          str.push(item.field);
       })
