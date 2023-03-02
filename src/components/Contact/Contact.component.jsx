@@ -34,7 +34,7 @@ const Contact = (_props, ref) => {
    const [subject, setSubject] = useState('');
    const [message, setMessage] = useState('');
 
-   async function handleSubmit() {
+   function handleSubmit() {
       if (name === '' || email === '' || subject === '' || message === '') {
          toast('Enter all details before submitting', {
             autoClose: 2000
@@ -48,16 +48,21 @@ const Contact = (_props, ref) => {
             message
          }
          // console.log(JSON.stringify(query));
-         const response = await axios.post(apiURL + "/query", { ...query })
-         if (response.message === "Success") {
-            setName('');
-            setEmail('');
-            setSubject('');
-            setMessage('');
-            toast("Submitted! You will be contacted soon!", {
-               autoClose: 3000
+         axios.post(apiURL + "/query", { ...query })
+            .then((response) => {
+               if (response?.data?.message === "Success") {
+                  setName('');
+                  setEmail('');
+                  setSubject('');
+                  setMessage('');
+                  toast("Submitted! You will be contacted soon!", {
+                     autoClose: 3000
+                  })
+               }
+            }).catch((err) => {
+               console.log(err);
             })
-         }
+
       }
    }
 
