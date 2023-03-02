@@ -10,56 +10,50 @@ const About = (_props, ref) => {
          <div className='h-full w-full px-3'>
             <div className='text-center pb-8'>
                <Heading>About</Heading>
-               <p>Magnaaaaam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+               <p>I’m a CSE B.Tech. graduate & a Tech Enthusiast who explored web development for over 3+ years to comprehend real world problems & alter then into functional solutions.</p>
             </div>
-            <div className='flex flex-wrap justify-between w-full h-max'>
-               <div className='w-1/3 pr-7'>
-                  <img src={aboutMyPic} alt="kushdeepwalia" className='w-full h-auto' />
+            <div className='flex flex-wrap justify-between w-full h-max max-[880px]:flex-col max-[880px]:items-center'>
+               <div className='w-1/3 pr-7 max-[880px]:p-0 max-[880px]:mb-5 max-[880px]:w-full max-[880px]:h-[300px] max-[880px]:flex max-[880px]:justify-center'>
+                  <img src={aboutMyPic} alt="kushdeepwalia" className='w-full h-auto max-[880px]:h-full max-[880px]:w-auto' />
                </div>
-               <div className='w-2/3'>
-                  <h3 className='font-bold text-2xl text-headingCol mb-2'>MERN Stack Web Developer & Freelancer.</h3>
-                  <p className='mb-3 text-justify'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <div className='flex w-full'>
-                     <div className='w-1/2'>
-                        <ul className='mb-4'>
-                           <li className='flex items-center mb-4'>
-                              <BiChevronRight size={28} className='text-priCol' />
-                              <span className='mx-1 font-bold'>Birthday :</span>
-                              <span>6 Sept 2000</span>
-                           </li>
-                           <li className='flex items-center mb-4'>
-                              <BiChevronRight size={28} className='text-priCol' />
-                              <span className='mx-1 font-bold'>Phone :</span>
-                              <a href='tel:+919953607706' rel='noreferrer' style={{ fontFamily: 'inter' }} className='font-light' >+91-9953607706</a>
-                           </li>
-                           <li className='flex items-center mb-4'>
-                              <BiChevronRight size={28} className='text-priCol' />
-                              <span className='mx-1 font-bold'>City :</span>
-                              <span className=''>New Delhi, Delhi, India</span>
-                           </li>
-                        </ul>
-                     </div>
-                     <div className='w-1/2'>
-                        <ul className='mb-4'>
-                           <li className='flex items-center mb-4'>
-                              <BiChevronRight size={28} className='text-priCol' />
-                              <span className='mx-1 font-bold'>Degree :</span>
-                              <span className=''>Bachelors</span>
-                           </li>
-                           <li className='flex items-center mb-4'>
-                              <BiChevronRight size={28} className='text-priCol' />
-                              <span className='mx-1 font-bold'>Email :</span>
-                              <a href='mailto:admin@kushdeepwalia.in' rel='noreferrer' className=''>admin@kushdeepwalia.in</a>
-                           </li>
-                           <li className='flex items-center mb-4'>
-                              <BiChevronRight size={28} className='text-priCol' />
-                              <span className='mx-1 font-bold'>Freelance :</span>
-                              <span className=''>Available</span>
-                           </li>
-                        </ul>
-                     </div>
+               <div className='w-2/3 max-[880px]:w-full'>
+                  <h3 className='font-bold text-2xl text-headingCol mb-2 max-[880px]:text-center max-[530px]:text-lg max-[420px]:text-base'>MERN Stack Web Developer & Freelancer.</h3>
+                  <p className='mb-3 text-justify'>I have pursued several projects, self led projects & freelance work to explore & experiment with different technologies.....</p>
+                  <div className='w-full flex max-[605px]:justify-center'>
+                     <ul className='mb-4 max-[605px]:mb-0 grid grid-cols-2 max-[605px]:grid-cols-1'>
+                        <li className='flex items-center mb-4'>
+                           <BiChevronRight size={28} className='text-priCol' />
+                           <span className='mx-1 font-bold'>Birthday :</span>
+                           <span>6 Sept 2000</span>
+                        </li>
+                        <li className='flex items-center mb-4'>
+                           <BiChevronRight size={28} className='text-priCol' />
+                           <span className='mx-1 font-bold'>Phone :</span>
+                           <a href='tel:+919953607706' rel='noreferrer' style={{ fontFamily: 'inter' }} className='font-light' >+91-9953607706</a>
+                        </li>
+                        <li className='flex items-center mb-4'>
+                           <BiChevronRight size={28} className='text-priCol' />
+                           <span className='mx-1 font-bold'>City :</span>
+                           <span className=''>New Delhi, Delhi, India</span>
+                        </li>
+                        <li className='flex items-center mb-4'>
+                           <BiChevronRight size={28} className='text-priCol' />
+                           <span className='mx-1 font-bold'>Degree :</span>
+                           <span className=''>Bachelors</span>
+                        </li>
+                        <li className='flex items-center mb-4'>
+                           <BiChevronRight size={28} className='text-priCol' />
+                           <span className='mx-1 font-bold'>Email :</span>
+                           <a href='mailto:admin@kushdeepwalia.in' rel='noreferrer' className=''>admin@kushdeepwalia.in</a>
+                        </li>
+                        <li className='flex items-center mb-4'>
+                           <BiChevronRight size={28} className='text-priCol' />
+                           <span className='mx-1 font-bold'>Freelance :</span>
+                           <span className=''>Available</span>
+                        </li>
+                     </ul>
                   </div>
-                  <p className='text-justify'> Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.</p>
+                  <p className='text-justify'>My other interests are geared towards organizing & managing tech events & connecting to people. I posses an ability to adapt in both self starting & collaborative environment while saying focused on achieving high quality results under strict deadlines.</p>
                </div>
             </div>
          </div>

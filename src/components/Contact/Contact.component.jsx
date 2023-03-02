@@ -5,6 +5,8 @@ import { HiOutlineMail } from 'react-icons/hi'
 import styled from 'styled-components';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+import apiURL from '../../ApiLink';
+import axios from 'axios';
 
 export const Input = styled.input`
    width: 100%;
@@ -32,22 +34,22 @@ const Contact = (_props, ref) => {
    const [subject, setSubject] = useState('');
    const [message, setMessage] = useState('');
 
-   function handleSubmit() {
+   async function handleSubmit() {
       if (name === '' || email === '' || subject === '' || message === '') {
          toast('Enter all details before submitting', {
             autoClose: 2000
          })
       }
       else {
-         let submitted = true;
          let query = {
             name,
             email,
             subject,
             message
          }
-         console.log(query);
-         if (submitted) {
+         // console.log(JSON.stringify(query));
+         const response = await axios.post(apiURL + "/query", { ...query })
+         if (response.message === "Success") {
             setName('');
             setEmail('');
             setSubject('');

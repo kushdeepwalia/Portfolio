@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from 'react'
+import React, { forwardRef, useCallback, useEffect, useState } from 'react'
 import { ImLink } from 'react-icons/im';
 import styled, { keyframes } from 'styled-components';
 import Heading from '../common/heading/Heading.component';
@@ -23,10 +23,19 @@ export const Overlay = styled.div`
 const Portfolio = (_props, ref) => {
    const [data, setData] = useState([]);
 
-   async function fetchData() {
-      const response = await (await fetch(apiURL + "/projects/")).json();
-      setData(response.projects);
+   function sortData(a, b) {
+      if (a["position"] === b["position"])
+         return 0;
+      else {
+         return a["position"] < b["position"] ? -1 : 1
+      }
    }
+
+
+   const fetchData = useCallback(async () => {
+      const response = await (await fetch(apiURL + "/projects/")).json();
+      setData(response.projects.sort(sortData));
+   }, [])
 
    function checkURl(url = '') {
       if (url.search('github.com') !== -1) {
@@ -39,14 +48,14 @@ const Portfolio = (_props, ref) => {
 
    useEffect(() => {
       fetchData();
-   }, [])
+   }, [fetchData])
 
    return (
       <section ref={ref} className='h-full w-full pt-16 px-5'>
          <div className='h-full w-full px-3'>
             <div className='text-center pb-8'>
                <Heading>Portfolio</Heading>
-               <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+               <p>I have pursued several projects, self led projects & freelance work to explore & experiment with different technologies.....</p>
             </div>
             <div className='w-full h-max px-5'>
                <div style={{ columns: "3 250px", gap: "15px" }}>

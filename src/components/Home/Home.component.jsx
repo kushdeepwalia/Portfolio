@@ -26,11 +26,10 @@ const Home = (_props, ref) => {
 
    return (
       <section className='w-full h-screen bg-cover' ref={ref} style={{ backgroundImage: `url(${HeroBg})`, backgroundPosition: 'top right' }}>
-         <div className='w-full h-screen bg-white/50 pl-48'>
+         <div className='w-full h-screen bg-white/50 pl-48 max-[992px]:pl-20 max-[550px]:pl-10 max-[440px]:pl-5'>
             <div className='w-full h-full p-5 flex flex-col justify-center'>
-               <h2 className='text-7xl mb-4 text-headingCol'>Kushdeep Walia</h2>
-               <h5 className='mb-10 text-3xl pl-1 font-semibold flex'>I'm&nbsp;
-                  <span id='positions'></span>
+               <h2 className='text-7xl mb-4 text-headingCol max-[660px]:text-5xl max-[440px]:text-4xl'>Kushdeep Walia</h2>
+               <h5 className='mb-10 text-3xl pl-1 font-semibold flex max-[530px]:text-xl'>I'm&nbsp;
                   <TypewriterComponent
                      options={{
                         strings: strings,
@@ -41,7 +40,7 @@ const Home = (_props, ref) => {
                      }}
                   />
                </h5>
-               <div className='flex items-center justify-between w-1/4'>
+               <div className='flex items-center justify-between w-[250px]'>
                   <a href='https://www.instagram.com/kushdeepwalia/' target='_blank' rel="noreferrer">
                      <AiOutlineInstagram size={32} className='text-headingCol hover:text-priCol' />
                   </a>

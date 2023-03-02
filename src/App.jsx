@@ -98,15 +98,11 @@ const App = () => {
 
    return (
       <>
-         {
-            window.innerWidth <= 992 ?
-               null :
-               <NavBar active={active} setActive={handleUpdate} />
-         }
-         <Home ref={ref.homeRef} />
+         <NavBar active={active} setActive={handleUpdate} />
+         {/* <Home ref={ref.homeRef} /> */}
          <div className='w-full pl-24 pr-4 min-[1300px]:pl-44 min-[1300px]:pr-24 max-[992px]:p-0'>
-            <About ref={ref.aboutRef} />
-            <Skills ref={ref.skillRef} />
+            {/* <About ref={ref.aboutRef} /> */}
+            {/* <Skills ref={ref.skillRef} /> */}
             <Resume ref={ref.resumeRef} />
             <Portfolio ref={ref.portfolioRef} />
             <Testimonial ref={ref.testimonialRef} />

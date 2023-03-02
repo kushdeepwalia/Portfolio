@@ -46,7 +46,7 @@ const NavBar = ({ active, setActive }) => {
    ]
 
    return (
-      <header className='flex flex-col justify-center fixed top-0 left-0 bottom-0 z-[9997] transition-all p-4 overflow-y-auto'>
+      <header className='flex max-[992px]:hidden flex-col justify-center fixed top-0 left-0 bottom-0 z-[9997] transition-all p-4 overflow-y-auto'>
          <nav>
             <ul className='flex flex-col py-3'>
                {

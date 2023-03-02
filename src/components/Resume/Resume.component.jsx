@@ -8,7 +8,7 @@ const Resume = (_props, ref) => {
          <div className='h-full w-full px-3'>
             <div className='text-center pb-8'>
                <Heading>Resume</Heading>
-               <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+               <p>I am an enthusiastic applicant who is excited to contribute my skills & expertise to the success of organization & with opportunity of growth.</p>
             </div>
             <div className='flex flex-wrap justify-between w-full h-max px-5'>
                <div className='w-1/2 pl-3 pr-10'>
@@ -16,7 +16,7 @@ const Resume = (_props, ref) => {
                      <h3 className='resume-title'>Summary</h3>
                      <div className='resume-item pb-0' >
                         <h4>Kushdeep Singh</h4>
-                        <p className='italic text-justify'>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</p>
+                        <p className='italic text-justify'>I’m a CSE B.Tech. graduate & a Tech Enthusiast who explored web development for over 3+ years to comprehend real world problems & alter then into functional solutions.</p>
                         <ul>
                            <li>New Delhi, Delhi, India</li>
                            <li><a href='tel:+919953607706' style={{ fontFamily: 'inter' }} className='font-light' rel='noreferrer' target='_blank'>+91-9953607706</a></li>
