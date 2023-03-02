@@ -68,8 +68,8 @@ const Contact = (_props, ref) => {
             <div className='text-center pb-8'>
                <Heading>Contact</Heading>
             </div>
-            <div className='flex flex-wrap justify-between w-full h-max px-5'>
-               <div className='w-1/3'>
+            <div className='flex flex-wrap justify-between w-full h-max px-5 max-[800px]:flex-col'>
+               <div className='w-1/3 max-[800px]:w-full max-[800px]:mb-5'>
                   <div className='flex w-max group cursor-context-menu'>
                      <div className='bg-backGrey h-[50px] w-[50px] rounded-full p-2 group-hover:bg-priCol'>
                         <MdOutlineLocationOn className='text-priCol p-0.5 group-hover:text-white w-full h-full' />
@@ -102,12 +102,12 @@ const Contact = (_props, ref) => {
                      </div>
                   </div>
                </div>
-               <div className='w-2/3 flex flex-col items-center'>
-                  <div className='h-[55px] mb-5 w-full flex'>
-                     <div className='w-1/2 h-full'>
+               <div className='w-2/3 flex flex-col items-center max-[800px]:w-full'>
+                  <div className='h-[55px] max-[500px]:flex-col max-[500px]:h-[130px] mb-5 w-full flex'>
+                     <div className='w-1/2 h-full max-[500px]:h-1/2 max-[500px]:mb-5 max-[500px]:w-full'>
                         <Input type="text" placeholder='Name' className='' name="Name" id="Name" value={name} onChange={(e) => setName(e.target.value)} />
                      </div>
-                     <div className='w-1/2 h-full ml-5'>
+                     <div className='w-1/2 h-full ml-5 max-[500px]:m-0 max-[500px]:h-1/2 max-[500px]:w-full'>
                         <Input type="text" placeholder='Email' name="Email" id="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                      </div>
                   </div>

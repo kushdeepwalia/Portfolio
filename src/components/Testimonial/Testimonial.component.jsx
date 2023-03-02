@@ -23,10 +23,10 @@ const Testimonial = (_props, ref) => {
    const [data, setData] = useState([]);
 
    function returnItems() {
-      if (window.innerWidth < 1150)
-         return 2
-      else if (window.innerWidth < 550) {
+      if (window.innerWidth < 690)
          return 1
+      else if (window.innerWidth < 1150) {
+         return 2
       }
       else return 3
    }

@@ -10,8 +10,8 @@ const Resume = (_props, ref) => {
                <Heading>Resume</Heading>
                <p>I am an enthusiastic applicant who is excited to contribute my skills & expertise to the success of organization & with opportunity of growth.</p>
             </div>
-            <div className='flex flex-wrap justify-between w-full h-max px-5'>
-               <div className='w-1/2 pl-3 pr-10'>
+            <div className='flex flex-wrap justify-between w-full h-max px-5 max-[660px]:flex-col'>
+               <div className='w-1/2 pl-3 pr-10 max-[660px]:p-0 max-[660px]:w-full'>
                   <div>
                      <h3 className='resume-title'>Summary</h3>
                      <div className='resume-item pb-0' >
@@ -40,7 +40,7 @@ const Resume = (_props, ref) => {
                      </div>
                   </div>
                </div>
-               <div className='w-1/2 pl-3 pr-10'>
+               <div className='w-1/2 pl-3 pr-10  max-[660px]:p-0 max-[660px]:w-full'>
                   <div>
                      <h3 className="resume-title">Professional Experience</h3>
                      <div className="resume-item">
