@@ -53,7 +53,7 @@ const Testimonial = (_props, ref) => {
                   margin={0}
                   className='owl-theme'
                   autoplay={true}
-                  autoplaySpeed={true}
+                  autoplaySpeed={800}
                   autoplayTimeout={3000}
                   autoplayHoverPause
                   items={returnItems()}
