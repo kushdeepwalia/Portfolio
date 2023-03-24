@@ -12,7 +12,7 @@ export const Input = styled.input`
    width: 100%;
    height: 100%;
    outline: none;
-   border: 1px solid var(--backGrey);
+   border: 1px solid var(--borderGrey);
    padding-left: 10px;
    font-size: 18px;
 `;
@@ -21,7 +21,7 @@ export const Textarea = styled.textarea`
    width: 100%;
    height: 100%;
    outline: none;
-   border: 1px solid var(--backGrey);
+   border: 1px solid var(--borderGrey);
    padding-left: 10px;
    padding-top: 10px;
    font-size: 18px;
@@ -91,7 +91,7 @@ const Contact = (_props, ref) => {
                      <div className='ml-3'>
                         <h2 className='text-2xl font-bold text-priCol'>Email:</h2>
                         <span className='text-sm text-headingCol' >
-                           <a href="mailto:admin@kushdeepwalia.in" style={{ fontFamily: 'inter' }}>admin@kushdeepwalia.in</a>
+                           <a href="mailto:kushdeepwalia@outlook.com" style={{ fontFamily: 'inter' }}>kushdeepwalia@outlook.com</a>
                         </span>
                      </div>
                   </div>

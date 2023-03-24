@@ -55,7 +55,7 @@ const Portfolio = (_props, ref) => {
          <div className='h-full w-full px-3'>
             <div className='text-center pb-8'>
                <Heading>Portfolio</Heading>
-               <p>I have pursued several projects, self led projects & freelance work to explore & experiment with different technologies.....</p>
+               <p>I have pursued several collaborative projects, self led projects & freelance work to explore & experiment with different stack - MERN, LAMP, etc.</p>
             </div>
             <div className='w-full h-max px-5'>
                <div style={{ columns: "3 250px", gap: "15px" }}>

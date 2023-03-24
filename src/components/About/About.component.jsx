@@ -18,7 +18,7 @@ const About = (_props, ref) => {
                </div>
                <div className='w-2/3 max-[880px]:w-full'>
                   <h3 className='font-bold text-2xl text-headingCol mb-2 max-[880px]:text-center max-[530px]:text-lg max-[420px]:text-base'>MERN Stack Web Developer & Freelancer.</h3>
-                  <p className='mb-3 text-justify'>I have pursued several projects, self led projects & freelance work to explore & experiment with different technologies.....</p>
+                  <p className='mb-3 text-justify'>I have pursued several collaborative projects, self led projects & freelance work to explore & experiment with different stack - MERN, LAMP, etc.</p>
                   <div className='w-full flex max-[605px]:justify-center'>
                      <ul className='mb-4 max-[605px]:mb-0 grid grid-cols-2 max-[605px]:grid-cols-1'>
                         <li className='flex items-center mb-4'>
@@ -39,12 +39,12 @@ const About = (_props, ref) => {
                         <li className='flex items-center mb-4'>
                            <BiChevronRight size={28} className='text-priCol' />
                            <span className='mx-1 font-bold'>Degree :</span>
-                           <span className=''>Bachelors</span>
+                           <span className=''>B.Tech - Computer Science</span>
                         </li>
                         <li className='flex items-center mb-4'>
                            <BiChevronRight size={28} className='text-priCol' />
                            <span className='mx-1 font-bold'>Email :</span>
-                           <a href='mailto:admin@kushdeepwalia.in' rel='noreferrer' className=''>admin@kushdeepwalia.in</a>
+                           <a href='mailto:kushdeepwalia@outlook.com' rel='noreferrer' className=''>kushdeepwalia@outlook.com</a>
                         </li>
                         <li className='flex items-center mb-4'>
                            <BiChevronRight size={28} className='text-priCol' />
@@ -53,7 +53,7 @@ const About = (_props, ref) => {
                         </li>
                      </ul>
                   </div>
-                  <p className='text-justify'>My other interests are geared towards organizing & managing tech events & connecting to people. I posses an ability to adapt in both self starting & collaborative environment while saying focused on achieving high quality results under strict deadlines.</p>
+                  <p className='text-justify'>My other interests are geared towards organizing & managing tech events & connecting to people. I posses an ability to adapt in both self starting & collaborative environment while staying focused on achieving high quality results under strict deadlines.</p>
                </div>
             </div>
          </div>

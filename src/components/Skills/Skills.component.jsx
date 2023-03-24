@@ -7,7 +7,7 @@ const Skills = (_props, ref) => {
          <div className='h-full w-full px-3'>
             <div className='text-center pb-8'>
                <Heading>Skills</Heading>
-               <p>I have diverse skill set that encompasses several programming languages & technologies. I always strive to stay on cutting edge tech.</p>
+               <p>I have diverse skill set that encompasses several programming languages & technologies. I always strive to stay on cutting edge technology.</p>
             </div>
             <div className='flex flex-wrap justify-between w-full h-max px-5 max-[660px]:p-0'>
                <div className='w-full grid grid-cols-2 gap-x-5 gap-y-0 p-3 max-[660px]:p-0 max-[660px]:grid-cols-1'>

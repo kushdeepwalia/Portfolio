@@ -30,13 +30,13 @@ const Resume = (_props, ref) => {
                         <h4>Bachelors of Technology</h4>
                         <h5>2018 - 2022</h5>
                         <p className='italic'>Guru Tegh Bahadur Institute of Technology, Delhi, IN</p>
-                        <p className='text-justify'>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+                        <p className='text-justify'>Scored 8.1 CGPA. Served as Management Lead of GDSC GTBIT Society for tenure 2020-21 under which I’ve organized 10+ events. Facilitated Google Cloud Program (GCP) in 2021.</p>
                      </div>
                      <div className="resume-item pb-0">
                         <h4>Senior Secondary (10+2)</h4>
                         <h5>2017 - 2018</h5>
                         <p className='italic'>S.S. Mota Singh Sr. Sec. Model School, Delhi, IN</p>
-                        <p className='text-justify'>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+                        <p className='text-justify'>Scored 85% in Non Medical Stream</p>
                      </div>
                   </div>
                </div>
@@ -45,12 +45,11 @@ const Resume = (_props, ref) => {
                      <h3 className="resume-title">Professional Experience</h3>
                      <div className="resume-item">
                         <h4>IT Assessment Designer Intern</h4>
-                        <h5>July 2022 to Jan 2022</h5>
+                        <h5>July 2022 to Jan 2023</h5>
                         <p className="italic">AON Cocubes, IN</p>
                         <ul>
-                           <li>Developed responsive components using flex and media-queries in ReactJS and CSS3.</li>
-                           <li>Basic knowledge about ReactJS Hooks, and Redux.</li>
-                           <li>Implemented Styled Components in ReactJS.</li>
+                           <li>Completed 10+ clients deliveries of creating assessments for IT branch.</li>
+                           <li>Analysed Question banks based on quality & difficulty of question.</li>
                         </ul>
                      </div>
                      <div className="resume-item">
@@ -59,7 +58,6 @@ const Resume = (_props, ref) => {
                         <p className="italic">Plutus Web Solutions, IN</p>
                         <ul>
                            <li>Developed responsive components using flex and media-queries in ReactJS and CSS3.</li>
-                           <li>Basic knowledge about ReactJS Hooks, and Redux.</li>
                            <li>Implemented Styled Components in ReactJS.</li>
                         </ul>
                      </div>

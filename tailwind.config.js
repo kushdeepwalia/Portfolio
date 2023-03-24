@@ -12,7 +12,8 @@ module.exports = {
             white: '#fff',
             backGrey: '#ececec',
             underlineGrey: '#adadad',
-            cardHover: '#ecececc0'
+            cardHover: '#ecececc0',
+            borderGrey: '#cacaca'
          }
       },
    },
