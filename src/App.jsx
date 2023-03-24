@@ -1,6 +1,6 @@
 // import Aos from 'aos'
 // eslint-disable-next-line
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, useCallback } from 'react'
 import { useWindowScroll } from 'react-use';
 import About from './components/About/About.component';
 import NavBar from './components/common/nav/NavBar.component'
@@ -81,14 +81,14 @@ const App = () => {
       }
    }
 
-   const handleUpdate = (scrolled = Boolean, newActive = '') => {
+   const handleUpdate = useCallback((scrolled = Boolean, newActive = '') => {
       if (scrolled) {
          updateOnScroll();
       }
       else {
          updateOnClick(newActive);
       }
-   }
+   }, [updateOnScroll, updateOnClick])
 
    useEffect(() => {
       window.addEventListener('scroll', () => {
