@@ -94,7 +94,7 @@ const App = () => {
       window.addEventListener('scroll', () => {
          handleUpdate(true)
       })
-   })
+   }, [])
 
    return (
       <>
