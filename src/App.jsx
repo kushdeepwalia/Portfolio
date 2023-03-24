@@ -81,20 +81,22 @@ const App = () => {
       }
    }
 
-   const handleUpdate = useCallback((scrolled = Boolean, newActive = '') => {
+   const handleUpdate = (scrolled = Boolean, newActive = '') => {
       if (scrolled) {
          updateOnScroll();
       }
       else {
          updateOnClick(newActive);
       }
-   }, [updateOnScroll, updateOnClick])
+   }
 
    useEffect(() => {
       window.addEventListener('scroll', () => {
          handleUpdate(true)
       })
-   }, [handleUpdate])
+
+      return () => window.removeEventListener('scroll')
+   })
 
    return (
       <>
