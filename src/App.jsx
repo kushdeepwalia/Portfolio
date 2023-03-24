@@ -94,8 +94,6 @@ const App = () => {
       window.addEventListener('scroll', () => {
          handleUpdate(true)
       })
-
-      return () => window.removeEventListener('scroll')
    })
 
    return (
