@@ -33,7 +33,7 @@ const Portfolio = (_props, ref) => {
 
 
    const fetchData = useCallback(async () => {
-      const response = await (await fetch(apiURL + "/projects/")).json();
+      const response = await (await fetch(apiURL + "/projects/visible")).json();
       setData(response.projects.sort(sortData));
    }, [])
 
@@ -58,32 +58,26 @@ const Portfolio = (_props, ref) => {
                <p>I have pursued several collaborative projects, self led projects & freelance work to explore & experiment with different stack - MERN, LAMP, etc.</p>
             </div>
             <div className='w-full h-max px-5'>
-               <div style={{ columns: "3 250px", gap: "15px" }}>
-                  {
-                     data.map((item, index) => {
-                        if (item.visibility === true)
-                           return <div key={index} className='mb-4 relative group-one'>
-                              <img alt={item.name} src={item.image} className='w-full h-auto' />
-                              <Overlay className='w-full hidden group-one-hover:flex absolute justify-center bottom-0 h-full'>
-                                 <div className='w-full flex justify-center items-center h-full bg-cardHover'>
-                                    <div className='w-5/6 h-4/5 relative'>
-                                       <div className='w-full h-full flex-col flex justify-center items-center'>
-                                          <h3 className='font-bold'>{item.name}</h3>
-                                          <p className='text-center mb-3 text-xs font-semibold text-headingCol px-12'>{item.desc.length > 55 ? item.desc.slice(0, item.desc.slice(0, 55).lastIndexOf(" ")) + "..." : item.desc}</p>
-                                          <a href={item.url} target='_blank' className='flex group-two bg-white hover:bg-headingCol px-3 py-2 hover:py-1.5 items-center text-priCol' rel='noreferrer'>
-                                             <span className='text-xs group-two-hover:text-white group-two-hover:text-sm font-semibold'>{checkURl(item.url)}</span>
-                                             <ImLink className='ml-1 group-two-hover:text-white h-[80%]' />
-                                          </a>
-                                       </div>
-                                       <div className='w-[50px] border-t-2 border-l-2 border-headingCol top-0 left-0 absolute h-[50px]'></div>
-                                       <div className='w-[50px] border-b-2 border-r-2 border-headingCol bottom-0 right-0 absolute h-[50px]'></div>
-                                    </div>
+               <div className='w-full flex justify-center min-h-[70vh]'>
+                  <div className='flex flex-wrap gap-10 justify-center w-full h-full'>
+                     {
+                        data.map((item, index) => item.visibility === true && (
+                           <div className={`h-[370px] border-b-2 hover:border-priCol duration-300 rounded-lg w-[300px] shadow-projectImg`} key={index}>
+                              <img alt={item.name} src={item.image} className='w-full hover:scale-110 hover:rounded-none duration-300 h-auto rounded-t-lg' />
+                              <div className='px-4 h-[170px] w-full relative py-2 rounded-b-lg'>
+                                 <h4 className='font-medium mb-2 md:mb-1 text-headingCol md:font-semibold text-lg capitalize'>{item.name}</h4>
+                                 <p className='text-sm'>{item.desc.length > 100 ? item.desc.slice(0, item.desc.slice(0, 100).lastIndexOf(" ")) + "..." : item.desc}</p>
+                                 <div className='absolute right-0 px-4 bottom-4 w-full'>
+                                    <a href={item.url} target="_blank" className='flex font-semibold text-sm bg-priCol rounded-md w-max px-4 py-2 text-white items-center' rel="noopener noreferrer">
+                                       <ImLink />
+                                       <span className='ml-2'>{checkURl(item.url)}</span>
+                                    </a>
                                  </div>
-                              </Overlay>
+                              </div>
                            </div>
-                        else return null;
-                     })
-                  }
+                        ))
+                     }
+                  </div>
                </div>
             </div>
          </div>
@@ -92,3 +86,25 @@ const Portfolio = (_props, ref) => {
 }
 
 export default forwardRef(Portfolio)
+
+/*
+data.map((item, index) => {
+if (item.visibility === true)
+return <div key={index} className='mb-4 relative group-one'>
+<Overlay className='w-full hidden group-one-hover:flex absolute justify-center bottom-0 h-full'>
+<div className='w-full flex justify-center items-center h-full bg-cardHover'>
+<div className='w-5/6 h-4/5 relative'>
+<div className='w-full h-full flex-col flex justify-center items-center'>
+<h3 className='font-bold'>{item.name}</h3>
+<p className='text-center mb-3 text-xs font-semibold text-headingCol px-12'>{item.desc.length > 55 ? item.desc.slice(0, item.desc.slice(0, 55).lastIndexOf(" ")) + "..." : item.desc}</p>
+<a href={item.url} target='_blank' className='flex group-two bg-white hover:bg-headingCol px-3 py-2 hover:py-1.5 items-center text-priCol' rel='noreferrer'>
+<span className='text-xs group-two-hover:text-white group-two-hover:text-sm font-semibold'>{checkURl(item.url)}</span>
+<ImLink className='ml-1 group-two-hover:text-white h-[80%]' />
+</a>
+</div>
+<div className='w-[50px] border-t-2 border-l-2 border-headingCol top-0 left-0 absolute h-[50px]'></div>
+<div className='w-[50px] border-b-2 border-r-2 border-headingCol bottom-0 right-0 absolute h-[50px]'></div>
+</div>
+</div>
+</Overlay>
+*/

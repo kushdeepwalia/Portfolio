@@ -14,6 +14,9 @@ module.exports = {
             underlineGrey: '#adadad',
             cardHover: '#ecececc0',
             borderGrey: '#cacaca'
+         },
+         boxShadow: {
+            projectImg: '0px 10px 20px rgba(0, 0, 0, 0.1)'
          }
       },
    },
