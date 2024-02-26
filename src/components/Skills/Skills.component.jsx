@@ -84,7 +84,24 @@ const Skills = (_props, ref) => {
                         <div className='h-2.5 w-[50%] rounded transition-opacity bg-priCol'></div>
                      </div>
                   </div>
-
+                  <div className='h-16 text-sm'>
+                     <h4 className='m-0 uppercase block font-semibold text-headingCol'>
+                        <span>Wordpress</span>
+                        <span className='float-right'>70%</span>
+                     </h4>
+                     <div className='rounded bg-backGrey'>
+                        <div className='h-2.5 w-[70%] rounded transition-opacity bg-priCol'></div>
+                     </div>
+                  </div>
+                  <div className='h-16 text-sm'>
+                     <h4 className='m-0 uppercase block font-semibold text-headingCol'>
+                        <span>FlutterFlow</span>
+                        <span className='float-right'>80%</span>
+                     </h4>
+                     <div className='rounded bg-backGrey'>
+                        <div className='h-2.5 w-[80%] rounded transition-opacity bg-priCol'></div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
